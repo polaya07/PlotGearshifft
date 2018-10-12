@@ -2,6 +2,19 @@ import numpy as np
 import sys
 import matplotlib.pyplot as plt
 from collections import Counter
+from matplotlib import rcParams
+
+size=12
+params = {'font.family': 'serif',
+	'font.serif': 'Times',
+	'legend.fontsize': size-2,
+         'figure.figsize': (17.5,10.9),
+         'axes.labelsize': size,
+	'axes.titleweight':'bold',
+         'axes.titlesize':size+2,
+         'xtick.labelsize':size,
+         'ytick.labelsize':size}
+plt.rcParams.update(params)
 
 #User imputs
 name=sys.argv[1]
@@ -80,6 +93,7 @@ plt.plot(x_nx[:,7], y_ptimes[:,7], 'orange',marker='o', label=possible_Times[7])
 plt.title('Percentage of each stage on Total Time')
 plt.xlabel('log2(Signal Size [MiB])')
 plt.ylabel('StageTime/TimeTotal')
-plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.06),
+          fancybox=True, shadow=True, ncol=5)
 plt.show()
 
