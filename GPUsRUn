@@ -1,0 +1,5 @@
+Results/GPUs/k80_cufft8061_gcc5.3.0_RHEL6.8.csv,Results/GPUs/p100_cufft8061_gcc5.3.0_SL7.4.csv,Results/GPUs/p100_cufft_gcc5.3.0_SL7.4.csv,Results/GPUs/v100_cufft_gcc5.3.0_SL7.4.csv 
+
+python plotresults.py Results/GPUs/k80_cufft8061_gcc5.3.0_RHEL6.8.csv,Results/GPUs/p100_cufft8061_gcc5.3.0_SL7.4.csv,Results/GPUs/p100_cufft_gcc5.3.0_SL7.4.csv,Results/GPUs/v100_cufft_gcc5.3.0_SL7.4.csv 1 '"Inplace"' '"Real"' '"double"' '"1"' '"powerof2"' nx Time_FFT_ms
+
+python plotresults.py Results/GPUs/p100_cufft8061_gcc5.3.0_SL7.4.csv,Results/GPUs/k80_cufft8061_gcc5.3.0_RHEL6.8.csv,Results/GPUs/p100_cufft_gcc5.3.0_SL7.4.csv,Results/GPUs/v100_cufft_gcc5.3.0_SL7.4.csv 1 '"Inplace"' '"Real"' '"double"' '"1"' '"powerof2"' nx Time_FFT_ms
